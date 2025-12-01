@@ -1,0 +1,256 @@
+form_id,lexeme,cell,source_form,orth_form,phon_form,analysed_orth_form,analysed_phon_form,paradigm_tag,variants_tag,overabundance_tag,source,page,language_id
+ranglong001,no_stem,1.sg,koi,koi,k o i,koi,k o i,default,NA,NA,Brown2025Ranglong,NA,ranglong
+ranglong002,no_stem,1.pl,koi-ni,koini,k o i n i,koi+ni,k o i + n i,default,NA,NA,Brown2025Ranglong,NA,ranglong
+ranglong003,no_stem,2.sg,nang,nang,n a ŋ,nang,n a ŋ,default,NA,NA,Brown2025Ranglong,NA,ranglong
+ranglong004,no_stem,2.pl,nang-ni,nangni,n a ŋ n i,nang+ni,n a ŋ + n i,default,NA,NA,Brown2025Ranglong,NA,ranglong
+ranglong005,no_stem,3.sg,ama,ama,a m a,ama,a m a,default,NA,NA,Brown2025Ranglong,NA,ranglong
+ranglong006,no_stem,3.pl,ama-ni,amani,a m a n i,ama+ni,a m a + n i,default,NA,NA,Brown2025Ranglong,NA,ranglong
+ranglong007,mu,1.sg.2.sg.fut.aff,namu kating,naΣkating,n a Σ k a t i ŋ,na+Σ+ka+ti+ng,n a + Σ + k a + t i + ŋ,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong008,mu,1.sg.2.sg.fut.aff,kēinamu rang,kēinaΣrang,k ee j n a Σ r a ŋ,kēi+na+Σ+rang,k ee j + n a + Σ + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong009,mu,1.sg.2.pl.fut.aff,namu u kating,naΣukating,n a Σ u k a t i ŋ,na+Σ+u+ka+ti+ng,n a + Σ + u + k a + t i + ŋ,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong010,mu,1.sg.2.pl.fut.aff,namu kating,naΣkating,n a Σ k a t i ŋ,na+Σ+ka+ti+ng,n a + Σ + k a + t i + ŋ,pragm_marked,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong011,mu,1.sg.2.pl.fut.aff,kēinamu u rang,kēinaΣurang,k ee j n a Σ u r a ŋ,kēi+na+Σ+u+rang,k ee j + n a + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong012,mu,1.sg.2.pl.fut.aff,kēinamu rang,kēinaΣrang,k ee j n a Σ r a ŋ,kēi+na+Σ+rang,k ee j + n a + Σ + r a ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong013,mu,1.pl.2.sg.fut.aff,namu inti,naΣinti,n a Σ i n t i,na+Σ+in+ti,n a + Σ + i n + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong014,mu,1.pl.2.sg.fut.aff,nanamu,nēinaΣrang,n ee j n a Σ r a ŋ,nēi+na+Σ+rang,n ee j + n a + Σ + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong015,mu,1.pl.2.pl.fut.aff,namu u inti,naΣuinti,n a Σ u i n t i,na+Σ+u+in+ti,n a + Σ + u + i n + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong016,mu,1.pl.2.pl.fut.aff,namu inti,naΣinti,n a Σ i n t i,na+Σ+in+ti,n a + Σ + i n + t i,pragm_marked,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong017,mu,1.pl.2.pl.fut.aff,nēinamu u rang,nēinaΣurang,n ee j n a Σ u r a ŋ,nēi+na+Σ+u+rang,n ee j + n a + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong018,mu,1.pl.2.pl.fut.aff,nēinamu rang,nēinaΣrang,n ee j n a Σ r a ŋ,nēi+na+Σ+rang,n ee j + n a + Σ + r a ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong019,mu,1.sg.3.sg.fut.aff,mu kating,Σkating,Σ k a t i ŋ,Σ+ka+ti+ng,Σ + k a + t i + ŋ,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong020,mu,1.sg.3.sg.fut.aff,kēimu rang,kēiΣrang,k ee j Σ r a ŋ,kēi+Σ+rang,k ee j + Σ + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong021,mu,1.sg.3.pl.fut.aff,mu u kating,Σukating,Σ u k a t i ŋ,Σ+u+ka+ti+ng,Σ + u + k a + t i + ŋ,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong022,mu,1.sg.3.pl.fut.aff,mu kating,Σkating,Σ k a t i ŋ,Σ+ka+ti+ng,Σ + k a + t i + ŋ,pragm_marked,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong023,mu,1.sg.3.pl.fut.aff,kēimu u rang,kēiΣurang,k ee j Σ u r a ŋ,kēi+Σ+u+rang,k ee j + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong024,mu,1.sg.3.pl.fut.aff,kēimu rang,kēiΣrang,k ee j Σ r a ŋ,kēi+Σ+rang,k ee j + Σ + r a ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong025,mu,1.pl.3.sg.fut.aff,mu inti,Σinti,Σ i n t i,Σ+in+ti,Σ + i n + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong026,mu,1.pl.3.sg.fut.aff,nēimu rang,nēiΣrang,n ee j Σ r a ŋ,nēi+Σ+rang,n ee j + Σ + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong027,mu,1.pl.3.pl.fut.aff,mu u inti,Σuinti,Σ u i n t i,Σ+u+in+ti,Σ + u + i n + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong028,mu,1.pl.3.pl.fut.aff,mu inti,Σinti,Σ i n t i,Σ+in+ti,Σ + i n + t i,pragm_marked,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong029,mu,1.pl.3.pl.fut.aff,nēimu u rang,nēiΣurang,n ee j Σ u r a ŋ,nēi+Σ+u+rang,n ee j + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong030,mu,1.pl.3.pl.fut.aff,nēimu rang,nēiΣrang,n ee j Σ r a ŋ,nēi+Σ+rang,n ee j + Σ + r a ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong031,mu,2.sg.1.sg.fut.aff,nēinamu rang,nēinaΣrang,n ee j n a Σ r a ŋ,nēi+na+Σ+rang,n ee j + n a + Σ + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong032,mu,2.sg.1.pl.fut.aff,nēinamu u rang,nēinaΣurang,n ee j n a Σ u r a ŋ,nēi+na+Σ+u+rang,n ee j + n a + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong033,mu,2.pl.1.sg.fut.aff,namu u nati,naΣunati,n a Σ u n a t i,na+Σ+u+na+ti,n a + Σ + u + n a + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong034,mu,2.pl.1.sg.fut.aff,namu nati,naΣnati,n a Σ n a t i,na+Σ+na+ti,n a + Σ + n a + t i,pragm_marked,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong035,mu,2.pl.1.sg.fut.aff,nēinamu u rang,nēinaΣurang,n ee j n a Σ u r a ŋ,nēi+na+Σ+u+rang,n ee j + n a + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong036,mu,2.pl.1.sg.fut.aff,nēinamu rang,nēinaΣrang,n ee j n a Σ r a ŋ,nēi+na+Σ+rang,n ee j + n a + Σ + r a ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong037,mu,2.pl.1.pl.fut.aff,namu u nati,naΣunati,n a Σ u n a t i,na+Σ+u+na+ti,n a + Σ + u + n a + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong038,mu,2.pl.1.pl.fut.aff,namu nati,naΣnati,n a Σ n a t i,na+Σ+na+ti,n a + Σ + n a + t i,pragm_marked,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong039,mu,2.pl.1.pl.fut.aff,nēinamu u rang,nēinaΣurang,n ee j n a Σ u r a ŋ,nēi+na+Σ+u+rang,n ee j + n a + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong040,mu,2.pl.1.pl.fut.aff,nēinamu rang,nēinaΣrang,n ee j n a Σ r a ŋ,nēi+na+Σ+rang,n ee j + n a + Σ + r a ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong041,mu,2.sg.3.sg.fut.aff,mu nati,Σnati,Σ n a t i,Σ+na+ti,Σ + n a + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong042,mu,2.sg.3.sg.fut.aff,nēimu rang,nēiΣrang,n ee j Σ r a ŋ,nēi+Σ+rang,n ee j + Σ + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong043,mu,2.sg.3.pl.fut.aff,mu nati,Σnati,Σ n a t i,Σ+na+ti,Σ + n a + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong044,mu,2.sg.3.pl.fut.aff,nēimu rang,nēiΣrang,n ee j Σ r a ŋ,nēi+Σ+rang,n ee j + Σ + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong045,mu,2.pl.3.sg.fut.aff,namu u nati,naΣunati,n a Σ u n a t i,na+Σ+u+na+ti,n a + Σ + u + n a + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong046,mu,2.pl.3.sg.fut.aff,namu nati,naΣnati,n a Σ n a t i,na+Σ+na+ti,n a + Σ + n a + t i,pragm_marked,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong047,mu,2.pl.3.sg.fut.aff,nēinamu u rang,nēinaΣurang,n ee j n a Σ u r a ŋ,nēi+na+Σ+u+rang,n ee j + n a + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong048,mu,2.pl.3.sg.fut.aff,nēinamu rang,nēinaΣrang,n ee j n a Σ r a ŋ,nēi+na+Σ+rang,n ee j + n a + Σ + r a ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong049,mu,2.pl.3.pl.fut.aff,mu u nati,Σunati,Σ u n a t i,Σ+u+na+ti,Σ + u + n a + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong050,mu,2.pl.3.pl.fut.aff,mu nati,Σnati,Σ n a t i,Σ+na+ti,Σ + n a + t i,pragm_marked,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong051,mu,2.pl.3.pl.fut.aff,nēimu u rang,nēiΣurang,n ee j Σ u r a ŋ,nēi+Σ+u+rang,n ee j + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong052,mu,2.pl.3.pl.fut.aff,nēimu rang,nēiΣrang,n ee j Σ r a ŋ,nēi+Σ+rang,n ee j + Σ + r a ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong053,mu,3.sg.1.sg.fut.aff,namu inti,naΣinti,n a Σ i n t i,na+Σ+in+ti,n a + Σ + i n + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong054,mu,3.sg.1.sg.fut.aff,ēinamu rang,ēinaΣrang,ee j n a Σ r a ŋ,ēi+na+Σ+rang,ee j + n a + Σ + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong055,mu,3.sg.1.pl.fut.aff,namu u inti,naΣuinti,n a Σ u i n t i,na+Σ+u+in+ti,n a + Σ + u + i n + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong056,mu,3.sg.1.pl.fut.aff,ēinamu rang,ēinaΣurang,ee j n a Σ u r a ŋ,ēi+na+Σ+u+rang,ee j + n a + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong057,mu,3.pl.1.sg.fut.aff,namu u inti,naΣuinti,n a Σ u i n t i,na+Σ+u+in+ti,n a + Σ + u + i n + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong058,mu,3.pl.1.sg.fut.aff,namu inti,naΣinti,n a Σ i n t i,na+Σ+in+ti,n a + Σ + i n + t i,pragm_marked,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong059,mu,3.pl.1.sg.fut.aff,ēinamu u rang,ēinaΣurang,ee j n a Σ u r a ŋ,ēi+na+Σ+u+rang,ee j + n a + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong060,mu,3.pl.1.sg.fut.aff,ēinamu rang,ēinaΣrang,ee j n a Σ r a ŋ,ēi+na+Σ+rang,ee j + n a + Σ + r a ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong061,mu,3.pl.1.pl.fut.aff,namu u inti,naΣuinti,n a Σ u i n t i,na+Σ+u+in+ti,n a + Σ + u + i n + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong062,mu,3.pl.1.pl.fut.aff,namu inti,naΣinti,n a Σ i n t i,na+Σ+in+ti,n a + Σ + i n + t i,pragm_marked,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong063,mu,3.pl.1.pl.fut.aff,ēinamu u rang,ēinaΣurang,ee j n a Σ u r a ŋ,ēi+na+Σ+u+rang,ee j + n a + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong064,mu,3.pl.1.pl.fut.aff,ēinamu rang,ēinaΣrang,ee j n a Σ r a ŋ,ēi+na+Σ+rang,ee j + n a + Σ + r a ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong065,mu,3.sg.2.sg.fut.aff,namu inti,naΣinti,n a Σ i n t i,na+Σ+in+ti,n a + Σ + i n + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong066,mu,3.sg.2.sg.fut.aff,ēinamu rang,ēinaΣrang,ee j n a Σ r a ŋ,ēi+na+Σ+rang,ee j + n a + Σ + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong067,mu,3.sg.2.pl.fut.aff,namu u inti,naΣuinti,n a Σ u i n t i,na+Σ+u+in+ti,n a + Σ + u + i n + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong068,mu,3.sg.2.pl.fut.aff,namu inti,naΣinti,n a Σ i n t i,na+Σ+in+ti,n a + Σ + i n + t i,pragm_marked,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong069,mu,3.sg.2.pl.fut.aff,ēinamu u rang,ēinaΣurang,ee j n a Σ u r a ŋ,ēi+na+Σ+u+rang,ee j + n a + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong070,mu,3.sg.2.pl.fut.aff,ēinamu rang,ēinaΣrang,ee j n a Σ r a ŋ,ēi+na+Σ+rang,ee j + n a + Σ + r a ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong071,mu,3.pl.2.sg.fut.aff,namu u inti,naΣuinti,n a Σ u i n t i,na+Σ+u+in+ti,n a + Σ + u + i n + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong072,mu,3.pl.2.sg.fut.aff,namu inti,naΣinti,n a Σ i n t i,na+Σ+in+ti,n a + Σ + i n + t i,pragm_marked,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong073,mu,3.pl.2.sg.fut.aff,ēinamu u rang,ēinaΣurang,ee j n a Σ u r a ŋ,ēi+na+Σ+u+rang,ee j + n a + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong074,mu,3.pl.2.sg.fut.aff,ēinamu rang,ēinaΣrang,ee j n a Σ r a ŋ,ēi+na+Σ+rang,ee j + n a + Σ + r a ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong075,mu,3.pl.2.pl.fut.aff,namu u inti,naΣuinti,n a Σ u i n t i,na+Σ+u+in+ti,n a + Σ + u + i n + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong076,mu,3.pl.2.pl.fut.aff,namu inti,naΣinti,n a Σ i n t i,na+Σ+in+ti,n a + Σ + i n + t i,pragm_marked,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong077,mu,3.pl.2.pl.fut.aff,ēinamu u rang,ēinaΣurang,ee j n a Σ u r a ŋ,ēi+na+Σ+u+rang,ee j + n a + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong078,mu,3.pl.2.pl.fut.aff,ēinamu rang,ēinaΣrang,ee j n a Σ r a ŋ,ēi+na+Σ+rang,ee j + n a + Σ + r a ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong079,mu,3.sg.3.sg.fut.aff,mu inti,Σinti,Σ i n t i,Σ+in+ti,Σ + i n + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong080,mu,3.sg.3.sg.fut.aff,ēimu rang,ēiΣrang,ee j Σ r a ŋ,ēi+Σ+rang,ee j + Σ + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong081,mu,3.sg.3.pl.fut.aff,mu u inti,Σuinti,Σ u i n t i,Σ+u+in+ti,Σ + u + i n + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong082,mu,3.sg.3.pl.fut.aff,mu inti,Σinti,Σ i n t i,Σ+in+ti,Σ + i n + t i,pragm_marked,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong083,mu,3.sg.3.pl.fut.aff,ēimu u rang,ēiΣurang,ee j Σ u r a ŋ,ēi+Σ+u+rang,ee j + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong084,mu,3.pl.3.sg.fut.aff,mu u inti,Σuinti,Σ u i n t i,Σ+u+in+ti,Σ + u + i n + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong085,mu,3.pl.3.sg.fut.aff,mu inti,Σinti,Σ i n t i,Σ+in+ti,Σ + i n + t i,pragm_marked,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong086,mu,3.pl.3.sg.fut.aff,ēimu u rang,ēiΣurang,ee j Σ u r a ŋ,ēi+Σ+u+rang,ee j + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong087,mu,3.pl.3.sg.fut.aff,ēimu rang,ēiΣrang,ee j Σ r a ŋ,ēi+Σ+rang,ee j + Σ + r a ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong088,mu,3.pl.3.pl.fut.aff,mu u inti,Σuinti,Σ u i n t i,Σ+u+in+ti,Σ + u + i n + t i,pragm_marked,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong089,mu,3.pl.3.pl.fut.aff,mu inti,Σinti,Σ i n t i,Σ+in+ti,Σ + i n + t i,pragm_marked,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong090,mu,3.pl.3.pl.fut.aff,ēimu u rang,ēiΣurang,ee j Σ u r a ŋ,ēi+Σ+u+rang,ee j + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong091,mu,3.pl.3.pl.fut.aff,ēimu rang,ēiΣrang,ee j Σ r a ŋ,ēi+Σ+rang,ee j + Σ + r a ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong092,mu,1.sg.2.sg.fut.neg,namu noning,naΣnoning,n a Σ n o n i ŋ,na+Σ+no+ni+ng,n a + Σ + n o + n i + ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong093,mu,1.sg.2.pl.fut.neg,namu u nomani,naΣunomani,n a Σ u n o m a n i,na+Σ+u+no+ma+ni,n a + Σ + u + n o + m a + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong094,mu,1.sg.2.pl.fut.neg,namu nomani,naΣnomani,n a Σ n o m a n i,na+Σ+no+ma+ni,n a + Σ + n o + m a + n i,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong095,mu,1.sg.3.pl.fut.neg,mu u noning,Σunoning,Σ u n o n i ŋ,Σ+u+no+ni+ng,Σ + u + n o + n i + ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong096,mu,1.sg.3.pl.fut.neg,mu noning,Σnoning,Σ n o n i ŋ,Σ+no+ni+ng,Σ + n o + n i + ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong097,mu,1.pl.2.sg.fut.neg,namu nomani,naΣnomani,n a Σ n o m a n i,na+Σ+no+ma+ni,n a + Σ + n o + m a + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong098,mu,1.pl.2.pl.fut.neg,namu u nomani,naΣunomani,n a Σ u n o m a n i,na+Σ+u+no+ma+ni,n a + Σ + u + n o + m a + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong099,mu,1.pl.2.pl.fut.neg,namu nomani,naΣnomani,n a Σ n o m a n i,na+Σ+no+ma+ni,n a + Σ + n o + m a + n i,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong100,mu,1.sg.3.sg.fut.neg,mu noning,Σnoning,Σ n o n i ŋ,Σ+no+ni+ng,Σ + n o + n i + ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong101,mu,1.pl.3.sg.fut.neg,mu nomani,Σnomani,Σ n o m a n i,Σ+no+ma+ni,Σ + n o + m a + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong102,mu,1.pl.3.pl.fut.neg,mu u nomani,Σunomani,Σ u n o m a n i,Σ+u+no+ma+ni,Σ + u + n o + m a + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong103,mu,1.pl.3.pl.fut.neg,mu nomani,Σnomani,Σ n o m a n i,Σ+no+ma+ni,Σ + n o + m a + n i,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong104,mu,2.sg.1.sg.fut.neg,namu notani,naΣnotani,n a Σ n o t a n i,na+Σ+no+ta+ni,n a + Σ + n o + t a + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong105,mu,2.sg.1.pl.fut.neg,namu u notani,naΣunotani,n a Σ u n o t a n i,na+Σ+u+no+ta+ni,n a + Σ + u + n o + t a + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong106,mu,2.pl.1.sg.fut.neg,namu u notani,naΣunotani,n a Σ u n o t a n i,na+Σ+u+no+ta+ni,n a + Σ + u + n o + t a + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong107,mu,2.pl.1.sg.fut.neg,namu notani,naΣnotani,n a Σ n o t a n i,na+Σ+no+ta+ni,n a + Σ + n o + t a + n i,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong108,mu,2.pl.1.pl.fut.neg,namu u notani,naΣunotani,n a Σ u n o t a n i,na+Σ+u+no+ta+ni,n a + Σ + u + n o + t a + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong109,mu,2.pl.1.pl.fut.neg,namu notani,naΣnotani,n a Σ n o t a n i,na+Σ+no+ta+ni,n a + Σ + n o + t a + n i,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong110,mu,2.sg.3.sg.fut.neg,mu notani,Σnotani,Σ n o t a n i,Σ+no+ta+ni,Σ + n o + t a + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong111,mu,2.sg.3.pl.fut.neg,mu notani,Σnotani,Σ n o t a n i,Σ+no+ta+ni,Σ + n o + t a + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong112,mu,2.pl.3.sg.fut.neg,mu u notani,Σunotani,Σ u n o t a n i,Σ+u+no+ta+ni,Σ + u + n o + t a + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong113,mu,2.pl.3.sg.fut.neg,mu notani,Σnotani,Σ n o t a n i,Σ+no+ta+ni,Σ + n o + t a + n i,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong114,mu,2.pl.3.pl.fut.neg,mu u notani,Σunotani,Σ u n o t a n i,Σ+u+no+ta+ni,Σ + u + n o + t a + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong115,mu,2.pl.3.pl.fut.neg,mu notani,Σnotani,Σ n o t a n i,Σ+no+ta+ni,Σ + n o + t a + n i,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong116,mu,3.sg.1.sg.fut.neg,namu noni,naΣnoni,n a Σ n o n i,na+Σ+no+ni,n a + Σ + n o + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong117,mu,3.sg.1.pl.fut.neg,namu u noni,naΣunoni,n a Σ u n o n i,na+Σ+u+no+ni,n a + Σ + u + n o + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong118,mu,3.pl.1.sg.fut.neg,namu u noni,naΣunoni,n a Σ u n o n i,na+Σ+u+no+ni,n a + Σ + u + n o + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong119,mu,3.pl.1.sg.fut.neg,namu noni,naΣnoni,n a Σ n o n i,na+Σ+no+ni,n a + Σ + n o + n i,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong120,mu,3.pl.1.pl.fut.neg,namu u noni,naΣunoni,n a Σ u n o n i,na+Σ+u+no+ni,n a + Σ + u + n o + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong121,mu,3.pl.1.pl.fut.neg,namu noni,naΣnoni,n a Σ n o n i,na+Σ+no+ni,n a + Σ + n o + n i,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong122,mu,3.sg.2.sg.fut.neg,namu noni,naΣnoni,n a Σ n o n i,na+Σ+no+ni,n a + Σ + n o + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong123,mu,3.sg.2.pl.fut.neg,namu u noni,naΣunoni,n a Σ u n o n i,na+Σ+u+no+ni,n a + Σ + u + n o + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong124,mu,3.sg.2.pl.fut.neg,namu noni,naΣnoni,n a Σ n o n i,na+Σ+no+ni,n a + Σ + n o + n i,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong125,mu,3.pl.2.sg.fut.neg,namu u noni,naΣunoni,n a Σ u n o n i,na+Σ+u+no+ni,n a + Σ + u + n o + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong126,mu,3.pl.2.sg.fut.neg,namu noni,naΣnoni,n a Σ n o n i,na+Σ+no+ni,n a + Σ + n o + n i,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong127,mu,3.pl.2.pl.fut.neg,namu u noni,naΣunoni,n a Σ u n o n i,na+Σ+u+no+ni,n a + Σ + u + n o + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong128,mu,3.pl.2.pl.fut.neg,namu noni,naΣnoni,n a Σ n o n i,na+Σ+no+ni,n a + Σ + n o + n i,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong129,mu,3.sg.3.sg.fut.neg,mu noni,Σnoni,Σ n o n i,Σ+no+ni,Σ + n o + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong130,mu,3.sg.3.pl.fut.neg,mu u noni,Σunoni,Σ u n o n i,Σ+u+no+ni,Σ + u + n o + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong131,mu,3.sg.3.pl.fut.neg,mu noni,Σnoni,Σ n o n i,Σ+no+ni,Σ + n o + n i,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong132,mu,3.pl.3.sg.fut.neg,mu u noni,Σunoni,Σ u n o n i,Σ+u+no+ni,Σ + u + n o + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong133,mu,3.pl.3.sg.fut.neg,mu noni,Σnoni,Σ n o n i,Σ+no+ni,Σ + n o + n i,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong134,mu,3.pl.3.pl.fut.neg,mu u noni,Σunoni,Σ u n o n i,Σ+u+no+ni,Σ + u + n o + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong135,mu,3.pl.3.pl.fut.neg,mu noni,Σnoni,Σ n o n i,Σ+no+ni,Σ + n o + n i,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong136,mu,1.sg.2.sg.nfut.aff,kanamu,kanaΣ,k a n a Σ,ka+na+Σ,k a + n a + Σ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong137,mu,1.sg.2.pl.nfut.aff,kanamu u,kanaΣu,k a n a Σ u,ka+na+Σ+u,k a + n a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong138,mu,1.sg.2.pl.nfut.aff,kanamu,kanaΣ,k a n a Σ,ka+na+Σ,k a + n a + Σ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong139,mu,1.pl.2.sg.nfut.aff,nanamu,nanaΣ,n a n a Σ,na+na+Σ,n a + n a + Σ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong140,mu,1.pl.2.pl.nfut.aff,nanamu u,nanaΣu,n a n a Σ u,na+na+Σ+u,n a + n a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong141,mu,1.pl.2.pl.nfut.aff,nanamu,nanaΣ,n a n a Σ,na+na+Σ,n a + n a + Σ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong142,mu,1.sg.3.sg.nfut.aff,kamu,kaΣ,k a Σ,ka+Σ,k a + Σ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong143,mu,1.sg.3.pl.nfut.aff,kamu u,kaΣu,k a Σ u,ka+Σ+u,k a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong144,mu,1.sg.3.pl.nfut.aff,kamu,kaΣ,k a Σ,ka+Σ,k a + Σ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong145,mu,1.pl.3.sg.nfut.aff,namu,naΣ,n a Σ,na+Σ,n a + Σ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong146,mu,1.pl.3.pl.nfut.aff,namu u,naΣu,n a Σ u,na+Σ+u,n a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong147,mu,1.pl.3.pl.nfut.aff,namu,naΣ,n a Σ,na+Σ,n a + Σ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong148,mu,2.sg.1.sg.nfut.aff,nanamu,nanaΣ,n a n a Σ,na+na+Σ,n a + n a + Σ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong149,mu,2.sg.1.pl.nfut.aff,nanamu u,nanaΣu,n a n a Σ u,na+na+Σ+u,n a + n a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong150,mu,2.pl.1.sg.nfut.aff,nanamu u,nanaΣu,n a n a Σ u,na+na+Σ+u,n a + n a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong151,mu,2.pl.1.sg.nfut.aff,nanamu,nanaΣ,n a n a Σ,na+na+Σ,n a + n a + Σ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong152,mu,2.pl.1.pl.nfut.aff,nanamu u,nanaΣu,n a n a Σ u,na+na+Σ+u,n a + n a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong153,mu,2.pl.1.pl.nfut.aff,nanamu,nanaΣ,n a n a Σ,na+na+Σ,n a + n a + Σ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong154,mu,2.sg.3.sg.nfut.aff,namu,naΣ,n a Σ,na+Σ,n a + Σ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong155,mu,2.sg.3.pl.nfut.aff,namu,naΣ,n a Σ,na+Σ,n a + Σ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong156,mu,2.pl.3.sg.nfut.aff,namu u,naΣu,n a Σ u,na+Σ+u,n a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong157,mu,2.pl.3.sg.nfut.aff,namu,naΣ,n a Σ,na+Σ,n a + Σ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong158,mu,2.pl.3.pl.nfut.aff,namu u,naΣu,n a Σ u,na+Σ+u,n a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong159,mu,2.pl.3.pl.nfut.aff,namu,naΣ,n a Σ,na+Σ,n a + Σ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong160,mu,3.sg.1.sg.nfut.aff,anamu,anaΣ,a n a Σ,a+na+Σ,a + n a + Σ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong161,mu,3.sg.1.pl.nfut.aff,anamu u,anaΣu,a n a Σ u,a+na+Σ+u,a + n a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong162,mu,3.pl.1.sg.nfut.aff,anamu u,anaΣu,a n a Σ u,a+na+Σ+u,a + n a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong163,mu,3.pl.1.sg.nfut.aff,anamu,anaΣ,a n a Σ,a+na+Σ,a + n a + Σ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong164,mu,3.pl.1.pl.nfut.aff,anamu u,anaΣu,a n a Σ u,a+na+Σ+u,a + n a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong165,mu,3.pl.1.pl.nfut.aff,anamu,anaΣ,a n a Σ,a+na+Σ,a + n a + Σ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong166,mu,3.sg.2.sg.nfut.aff,anamu,anaΣ,a n a Σ,a+na+Σ,a + n a + Σ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong167,mu,3.sg.2.pl.nfut.aff,anamu u,anaΣu,a n a Σ u,a+na+Σ+u,a + n a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong168,mu,3.sg.2.pl.nfut.aff,anamu,anaΣ,a n a Σ,a+na+Σ,a + n a + Σ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong169,mu,3.pl.2.sg.nfut.aff,anamu u,anaΣu,a n a Σ u,a+na+Σ+u,a + n a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong170,mu,3.pl.2.sg.nfut.aff,anamu,anaΣ,a n a Σ,a+na+Σ,a + n a + Σ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong171,mu,3.pl.2.pl.nfut.aff,anamu u,anaΣu,a n a Σ u,a+na+Σ+u,a + n a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong172,mu,3.pl.2.pl.nfut.aff,anamu,anaΣ,a n a Σ,a+na+Σ,a + n a + Σ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong173,mu,3.sg.3.sg.nfut.aff,amu,aΣ,a Σ,a+Σ,a + Σ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong174,mu,3.sg.3.pl.nfut.aff,amu u,aΣu,a Σ u,a+Σ+u,a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong175,mu,3.sg.3.pl.nfut.aff,amu,aΣ,a Σ,a+Σ,a + Σ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong176,mu,3.pl.3.sg.nfut.aff,amu u,aΣu,a Σ u,a+Σ+u,a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong177,mu,3.pl.3.sg.nfut.aff,amu,aΣ,a Σ,a+Σ,a + Σ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong178,mu,3.pl.3.pl.nfut.aff,amu u,aΣu,a Σ u,a+Σ+u,a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong179,mu,3.pl.3.pl.nfut.aff,amu,aΣ,a Σ,a+Σ,a + Σ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong180,mu,1.sg.2.sg.nfut.neg,namu making,naΣmaking,n a Σ m a k i ŋ,na+Σ+mak+ing,n a + Σ + m a k + i ŋ,default,dialect_var,NA,Brown2025Ranglong,nopage,ranglong
+ranglong181,mu,1.sg.2.sg.nfut.neg,namu makung,naΣmakung,n a Σ m a k u ŋ,na+Σ+mak+ung,n a + Σ + m a k + u ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong182,mu,1.sg.2.pl.nfut.neg,namu u making,naΣumaking,n a Σ u m a k i ŋ,na+Σ+u+mak+ing,n a + Σ + u + m a k + i ŋ,default,dialect_var,NA,Brown2025Ranglong,nopage,ranglong
+ranglong183,mu,1.sg.2.pl.nfut.neg,namu making,naΣmaking,n a Σ m a k i ŋ,na+Σ+mak+ing,n a + Σ + m a k + i ŋ,default,dialect_var,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong184,mu,1.sg.2.pl.nfut.neg,namu u makung,naΣumakung,n a Σ u m a k u ŋ,na+Σ+u+mak+ung,n a + Σ + u + m a k + u ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong185,mu,1.sg.2.pl.nfut.neg,namu makung,naΣmakung,n a Σ m a k u ŋ,na+Σ+mak+ung,n a + Σ + m a k + u ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong186,mu,1.pl.2.sg.nfut.neg,namu makme,naΣmakme,n a Σ m a k m e,na+Σ+mak+me,n a + Σ + m a k + m e,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong187,mu,1.pl.2.pl.nfut.neg,namu u makme,naΣumakme,n a Σ u m a k m e,na+Σ+u+mak+me,n a + Σ + u + m a k + m e,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong188,mu,1.pl.2.pl.nfut.neg,namu makme,naΣmakme,n a Σ m a k m e,na+Σ+mak+me,n a + Σ + m a k + m e,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong189,mu,1.sg.3.sg.nfut.neg,mu making,Σmaking,Σ m a k i ŋ,Σ+mak+ing,Σ + m a k + i ŋ,default,dialect_var,NA,Brown2025Ranglong,nopage,ranglong
+ranglong190,mu,1.sg.3.sg.nfut.neg,mu makung,Σmakung,Σ m a k u ŋ,Σ+mak+ung,Σ + m a k + u ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong191,mu,1.sg.3.pl.nfut.neg,mu u making,Σumaking,Σ u m a k i ŋ,Σ+u+mak+ing,Σ + u + m a k + i ŋ,default,dialect_var,NA,Brown2025Ranglong,nopage,ranglong
+ranglong192,mu,1.sg.3.pl.nfut.neg,mu making,Σmaking,Σ m a k i ŋ,Σ+mak+ing,Σ + m a k + i ŋ,default,dialect_var,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong193,mu,1.sg.3.pl.nfut.neg,mu u makung,Σumakung,Σ u m a k u ŋ,Σ+u+mak+ung,Σ + u + m a k + u ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong194,mu,1.sg.3.pl.nfut.neg,mu makung,Σmakung,Σ m a k u ŋ,Σ+mak+ung,Σ + m a k + u ŋ,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong195,mu,1.pl.3.sg.nfut.neg,mu makme,Σmakme,Σ m a k m e,Σ+mak+me,Σ + m a k + m e,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong196,mu,1.pl.3.pl.nfut.neg,mu u makme,Σumakme,Σ u m a k m e,Σ+u+mak+me,Σ + u + m a k + m e,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong197,mu,1.pl.3.pl.nfut.neg,mu makme,Σmakme,Σ m a k m e,Σ+mak+me,Σ + m a k + m e,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong198,mu,2.sg.1.sg.nfut.neg,namu makche,naΣmakche,n a Σ m a k ts e,na+Σ+mak+che,n a + Σ + m a k + ts e,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong199,mu,2.sg.1.pl.nfut.neg,namu u makche,naΣumakche,n a Σ u m a k ts e,na+Σ+u+mak+che,n a + Σ + u + m a k + ts e,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong200,mu,2.pl.1.sg.nfut.neg,mu u makche,Σumakche,Σ u m a k ts e,Σ+u+mak+che,Σ + u + m a k + ts e,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong201,mu,2.pl.1.sg.nfut.neg,mu makche,Σmakche,Σ m a k ts e,Σ+mak+che,Σ + m a k + ts e,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong202,mu,2.pl.1.pl.nfut.neg,namu u makche,naΣumakche,n a Σ u m a k ts e,na+Σ+u+mak+che,n a + Σ + u + m a k + ts e,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong203,mu,2.pl.1.pl.nfut.neg,namu makche,naΣmakche,n a Σ m a k ts e,na+Σ+mak+che,n a + Σ + m a k + ts e,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong204,mu,2.sg.3.sg.nfut.neg,mu makche,Σmakche,Σ m a k ts e,Σ+mak+che,Σ + m a k + ts e,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong205,mu,2.sg.3.pl.nfut.neg,mu u makche,Σumakche,Σ u m a k ts e,Σ+u+mak+che,Σ + u + m a k + ts e,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong206,mu,2.sg.3.pl.nfut.neg,mu makche,Σmakche,Σ m a k ts e,Σ+mak+che,Σ + m a k + ts e,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong207,mu,2.pl.3.sg.nfut.neg,mu u makche,Σumakche,Σ u m a k ts e,Σ+u+mak+che,Σ + u + m a k + ts e,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong208,mu,2.pl.3.sg.nfut.neg,mu makche,Σmakche,Σ m a k ts e,Σ+mak+che,Σ + m a k + ts e,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong209,mu,2.pl.3.pl.nfut.neg,mu u makche,Σumakche,Σ u m a k ts e,Σ+u+mak+che,Σ + u + m a k + ts e,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong210,mu,2.pl.3.pl.nfut.neg,mu makche,Σmakche,Σ m a k ts e,Σ+mak+che,Σ + m a k + ts e,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong211,mu,3.sg.1.sg.nfut.neg,namu mak,naΣmak,n a Σ m a k,na+Σ+mak,n a + Σ + m a k,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong212,mu,3.sg.1.pl.nfut.neg,namu u mak,naΣumak,n a Σ u m a k,na+Σ+u+mak,n a + Σ + u + m a k,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong213,mu,3.sg.1.pl.nfut.neg,namu mak,naΣmak,n a Σ m a k,na+Σ+mak,n a + Σ + m a k,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong214,mu,3.pl.1.sg.nfut.neg,namu u mak,naΣumak,n a Σ u m a k,na+Σ+u+mak,n a + Σ + u + m a k,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong215,mu,3.pl.1.sg.nfut.neg,namu mak,naΣmak,n a Σ m a k,na+Σ+mak,n a + Σ + m a k,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong216,mu,3.pl.1.pl.nfut.neg,namu u mak,naΣumak,n a Σ u m a k,na+Σ+u+mak,n a + Σ + u + m a k,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong217,mu,3.pl.1.pl.nfut.neg,namu mak,naΣmak,n a Σ m a k,na+Σ+mak,n a + Σ + m a k,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong218,mu,3.sg.2.sg.nfut.neg,namu mak,naΣmak,n a Σ m a k,na+Σ+mak,n a + Σ + m a k,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong219,mu,3.sg.2.pl.nfut.neg,namu mak,naΣmak,n a Σ m a k,na+Σ+mak,n a + Σ + m a k,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong220,mu,3.pl.2.sg.nfut.neg,namu u mak,naΣumak,n a Σ u m a k,na+Σ+u+mak,n a + Σ + u + m a k,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong221,mu,3.pl.2.sg.nfut.neg,namu mak,naΣmak,n a Σ m a k,na+Σ+mak,n a + Σ + m a k,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong222,mu,3.pl.2.pl.nfut.neg,namu u mak,naΣumak,n a Σ u m a k,na+Σ+u+mak,n a + Σ + u + m a k,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong223,mu,3.pl.2.pl.nfut.neg,namu mak,naΣmak,n a Σ m a k,na+Σ+mak,n a + Σ + m a k,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong224,mu,3.sg.3.sg.nfut.neg,mu mak,Σmak,Σ m a k,Σ+mak,Σ + m a k,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong225,mu,3.sg.3.pl.nfut.neg,mu u mak,Σumak,Σ u m a k,Σ+u+mak,Σ + u + m a k,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong226,mu,3.sg.3.pl.nfut.neg,mu mak,Σmak,Σ m a k,Σ+mak,Σ + m a k,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong227,mu,3.pl.3.sg.nfut.neg,mu u mak,Σumak,Σ u m a k,Σ+u+mak,Σ + u + m a k,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong228,mu,3.pl.3.sg.nfut.neg,mu mak,Σmak,Σ m a k,Σ+mak,Σ + m a k,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong229,mu,3.pl.3.pl.nfut.neg,mu u mak,Σumak,Σ u m a k,Σ+u+mak,Σ + u + m a k,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong230,mu,3.pl.3.pl.nfut.neg,mu mak,Σmak,Σ m a k,Σ+mak,Σ + m a k,default,NA,optional_plural,Brown2025Ranglong,nopage,ranglong
+ranglong231,se,1.sg.fut.aff,kēise rang,kēiΣrang,k ee j Σ r a ŋ,kēi+Σ+rang,k ee j + Σ + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong232,se,1.pl.fut.aff,nēise rang,nēiΣrang,n ee j Σ r a ŋ,nēi+Σ+rang,n ee j + Σ + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong233,se,2.sg.fut.aff,nēise rang,nēiΣrang,n ee j Σ r a ŋ,nēi+Σ+rang,n ee j + Σ + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong234,se,2.pl.fut.aff,nēise u rang,nēiΣurang,n ee j Σ u r a ŋ,nēi+Σ+u+rang,n ee j + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong235,se,3.sg.fut.aff,ēise rang,ēiΣrang,ee j Σ r a ŋ,ēi+Σ+rang,ee j + Σ + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong236,se,3.pl.fut.aff,ēise u rang,ēiΣurang,ee j Σ u r a ŋ,ēi+Σ+u+rang,ee j + Σ + u + r a ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong237,se,1.sg.fut.neg,se noning,Σnoning,Σ n o n i ŋ,Σ+no+ni+ng,Σ + n o + n i + ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong238,se,1.pl.fut.neg,se nomani,Σnomani,Σ n o m a n i,Σ+no+ma+ni,Σ + n o + m a + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong239,se,2.sg.fut.neg,se notani,Σnotani,Σ n o t a n i,Σ+no+ta+ni,Σ + n o + t a + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong240,se,2.pl.fut.neg,se u notani,Σunotani,Σ u n o t a n i,Σ+u+no+ta+ni,Σ + u + n o + t a + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong241,se,3.sg.fut.neg,se noni,Σnoni,Σ n o n i,Σ+no+ni,Σ + n o + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong242,se,3.pl.fut.neg,se u noni,Σunoni,Σ u n o n i,Σ+u+no+ni,Σ + u + n o + n i,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong243,se,1.sg.nfut.aff,kase,kaΣ,k a Σ,ka+Σ,k a + Σ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong244,se,1.pl.nfut.aff,nase,naΣ,n a Σ,na+Σ,n a + Σ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong245,se,2.sg.nfut.aff,nase,naΣ,n a Σ,na+Σ,n a + Σ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong246,se,2.pl.nfut.aff,nase u,naΣu,n a Σ u,na+Σ+u,n a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong247,se,3.sg.nfut.aff,ase,aΣ,a Σ,a+Σ,a + Σ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong248,se,3.pl.nfut.aff,ase u,aΣu,a Σ u,a+Σ+u,a + Σ + u,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong249,se,1.sg.nfut.neg,se making,Σmaking,Σ m a k i ŋ,Σ+mak+ing,Σ + m a k + i ŋ,default,dialect_var,NA,Brown2025Ranglong,nopage,ranglong
+ranglong250,se,1.sg.nfut.neg,se makung,Σmakung,Σ m a k u ŋ,Σ+mak+ung,Σ + m a k + u ŋ,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong251,se,1.pl.nfut.neg,se makme,Σmakme,Σ m a k m e,Σ+mak+me,Σ + m a k + m e,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong252,se,2.sg.nfut.neg,se makche,Σmakche,Σ m a k ts e,Σ+mak+che,Σ + m a k + ts e,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong253,se,2.pl.nfut.neg,se u makche,Σumakche,Σ u m a k ts e,Σ+u+mak+che,Σ + u + m a k + ts e,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong254,se,3.sg.nfut.neg,se mak,Σmak,Σ m a k,Σ+mak,Σ + m a k,default,NA,NA,Brown2025Ranglong,nopage,ranglong
+ranglong255,se,3.pl.nfut.neg,se u mak,Σumak,Σ u m a k,Σ+u+mak,Σ + u + m a k,default,NA,NA,Brown2025Ranglong,nopage,ranglong
