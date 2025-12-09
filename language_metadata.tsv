@@ -1,9 +1,9 @@
-Language_Name	Language_ID	Glottocode	ISOcode	Group	Latitude	Longitude	Sources	Comment
-Anal Naga	analnaga	anal1239	anm	North-West	24.33	94	Ozerov2019Anal; Ozerov2025Anal	
-Chiru	chiru	chir1283 	cdf	North-West	24.54	93.65	Awan2019Chiru; Awan2025Chiru	
-Hmar	hmar	hmar1241	hmr	North-West	24.35	93.7	Infimate2025Hmar	
-Hyow	hyow	khya1239	(csh)	South	22.37	92.17	Zakaria2018Hyow	The isocode given for PARALEX is that of Asho Chin, of which Hyow is considered to be a dialect. However, Hyow is not readily mututally intelligible with Asho and thus this isocode should not be used to refer to Hyow.
-Lamkang	lamkang	lamk1238	lmk	North-West	24.42	93.95	Chelliah2019Lamkang	
-Monsang	monsang	mons1234	nmh	North-West	24.43	94.01	Konnerth2025Monsang	
-Pangkhua	pangkhua	pank1249	pkh	Central	22.41	92.46	Akter2024Grammar; Akter2024Argument; Akter2016Endangerment	
-Ranglong	ranglong	rang1271	(rnl)	North-West	24.33	92.22	Brown2025Ranglong	The isocode given for PARALEX actually refers to a group of varieties (‘Halam’), many of which exhibit low mutual intelligibility with Ranglong. We discourage using this isocode for Ranglong.
+Language_Name	Language_ID	Glottocode	ISOcode	Group	Latitude	Longitude	Sources	Comment	N_Forms	N_Scenarios
+Anal Naga	analnaga	anal1239	anm	North-West	24.33	94	Ozerov2019Anal; Ozerov2025Anal		257	200
+Chiru	chiru	chir1283 	cdf	North-West	24.54	93.65	Awan2019Chiru; Awan2025Chiru		674	165
+Hmar	hmar	hmar1241	hmr	North-West	24.35	93.7	Infimate2025Hmar		267	163
+Hyow	hyow	khya1239	(csh)	South	22.37	92.17	Zakaria2018Hyow	The isocode given for PARALEX is that of Asho Chin, of which Hyow is considered to be a dialect. However, Hyow is not readily mututally intelligible with Asho and thus this isocode should not be used to refer to Hyow.	917	352
+Lamkang	lamkang	lamk1238	lmk	North-West	24.42	93.95	Chelliah2019Lamkang		298	158
+Monsang	monsang	mons1234	nmh	North-West	24.43	94.01	Konnerth2025Monsang		336	163
+Pangkhua	pangkhua	pank1249	pkh	Central	22.41	92.46	Akter2024Grammar; Akter2024Argument; Akter2016Endangerment		149	145
+Ranglong	ranglong	rang1271	(rnl)	North-West	24.33	92.22	Brown2025Ranglong	The isocode given for PARALEX actually refers to a group of varieties (‘Halam’), many of which exhibit low mutual intelligibility with Ranglong. We discourage using this isocode for Ranglong.	255	142
