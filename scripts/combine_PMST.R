@@ -1,7 +1,7 @@
 # Script for combining all the PMST sets into one file, reading them directly from the GitHub repositories
 
 # Author: Sandra Auderset
-# Last modified: 2025-11-12
+# Last modified: 2025-12-09
 
 
 # load packages
@@ -10,7 +10,7 @@ library(httr)
 
 # fetch repositories
 get_pmst_repos <- function() {
-  repo_url <- GET("https://api.github.com/users/PMST-Database/repos")
+  repo_url <- GET("https://api.github.com/users/isw-unibe-ch/repos")
   repo_info <- content(repo_url)
   repos_full_names <- sapply(repo_info, function(repo) {
     return(repo[["full_name"]])
@@ -20,7 +20,7 @@ get_pmst_repos <- function() {
 
 # fetch data set names
 get_pmst_langs <- function() {
-  repo_url <- GET("https://api.github.com/users/PMST-Database/repos")
+  repo_url <- GET("https://api.github.com/users/isw-unibe-ch/repos")
   repo_info <- content(repo_url)
   repos_names <- sapply(repo_info, function(repo) {
     return(tolower(repo[["name"]]))
@@ -30,28 +30,29 @@ get_pmst_langs <- function() {
 
 # get repo list and remove the repo with the supplementary materials
 pmst_repos <- get_pmst_repos()
-pmst_repos <- pmst_repos[! pmst_repos %in% "PMST-Database/PMST-Supplementary-Materials"]
+pmst_repos <- pmst_repos[! pmst_repos %in% "isw-unibe-ch/PMST-Meta"]
 
 # get names list and remove the suppl. materials
 pmst_langs <- get_pmst_langs()
-pmst_langs <- pmst_langs[! pmst_langs %in% "pmst-supplementary-materials"]
+pmst_langs <- pmst_langs[! pmst_langs %in% "pmst-meta"]
 
 # read the forms file from each repo and combine into one dataframe (can be repeated for any of the data files)
 get_forms <- function(repos) {
-  forms_list <- map(repos, function(f) {
-    forms_url <- paste0("https://raw.githubusercontent.com/", f, "/main/", pmst_langs, "_forms.csv")
-    forms_df <- read_csv(forms_url)
+  forms_list <- map2(repos, pmst_langs, function(r, l) {
+    forms_url <- paste0("https://raw.githubusercontent.com/", r, "/main/", l, "_forms.csv")
+    forms_df <- read_csv(forms_url, cols(.default = "c"), col_names = TRUE)
     return(forms_df)
   })
-  # bind all dataframes into one
+  # bind all dataframes into one and re-order the columns
   combined_forms_df <- bind_rows(forms_list)
   return(combined_forms_df)
 }
 
-# apply the function
-forms_dataframe <- get_forms(pmst_repos)
+# apply the function 
+forms_dataframe <- get_forms(pmst_repos) %>%
+  select(language_id, form_id:analysed_orth_form, source, page, ends_with("_tag"))
 glimpse(forms_dataframe)
 
 # write to Supplementary Materials folder (adjust with your own filepath)
-write_csv(forms_dataframe, "/Users/auderset/Documents/GitHub/PMST-Supplementary-Materials/all_forms.csv")
+write_csv(forms_dataframe, "/Users/auderset/Documents/GitHub/PMST-Meta/all_forms.csv")
 
