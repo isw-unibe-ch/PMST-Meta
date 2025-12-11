@@ -56,3 +56,27 @@ glimpse(forms_dataframe)
 # write to Supplementary Materials folder (adjust with your own filepath)
 write_csv(forms_dataframe, "/Users/auderset/Documents/GitHub/PMST-Meta/all_forms.csv")
 
+
+# same for cells to get an overview of scenarios
+# read the cells file from each repo and combine into one dataframe (can be repeated for any of the data files)
+get_cells <- function(repos) {
+  cells_list <- map2(repos, pmst_langs, function(r, l) {
+    cells_url <- paste0("https://raw.githubusercontent.com/", r, "/main/", l, "_cells.csv")
+    cells_df <- read_csv(cells_url, cols(.default = "c"), col_names = TRUE)
+    return(cells_df)
+  })
+  # bind all dataframes into one and re-order the columns
+  combined_cells_df <- bind_rows(cells_list)
+  return(combined_cells_df)
+}
+
+# apply the function 
+cells_dataframe <- get_cells(pmst_repos) %>%
+  select(-language_id) %>%
+  distinct()
+glimpse(cells_dataframe)
+
+# write to Supplementary Materials folder (adjust with your own filepath)
+write_csv(cells_dataframe, "/Users/auderset/Documents/GitHub/PMST-Meta/all_cells.csv")
+
+
