@@ -30,9 +30,9 @@ library(ggthemes)
 library(cowplot)
 library(sf)
 
-# Google Maps and Stadia Maps APIs
-register_google(key = "AIzaSyBgaOp_Lnz-A2vmQrIBKOxX67uxLgW-Z8M", write = FALSE)
-register_stadiamaps("3a811dbc-3a12-4a65-a604-94e474a482af", write = FALSE)
+# Google Maps and Stadia Maps APIs - you have to add your API for the code to work
+register_google(key = "YOUR-KEY", write = FALSE)
+register_stadiamaps("YOUR-KEY", write = FALSE)
 ```
 
 ```{r}
