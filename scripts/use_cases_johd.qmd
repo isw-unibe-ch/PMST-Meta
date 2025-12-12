@@ -24,6 +24,7 @@ Map showing the languages with group affiliation included in the current release
 # packages and keys for maps
 library(ggmap)
 library(ggrepel)
+library(ggpattern)
 library(ggsci)
 library(ggthemes)
 library(cowplot)
@@ -108,30 +109,320 @@ lang_o <- noquote(lang_t)
 ```
 
 ```{r}
-# read in scenario file, sort
-scenarios <- read_csv(here("scripts/scenarios.csv")) %>%
-  mutate(across(ends_with("_Number"), ~factor(.x, levels = c("SG", "DU", "PL")))) %>%
-  mutate(across(ends_with("_Clusivity"), ~factor(.x, levels = c("EXCL", "INCL")))) %>%
-  arrange(A_Person, A_Number, A_Clusivity, Marking_Type, Scen_Person, O_Number)
-glimpse(scenarios)
+# read in cells file; split cells for sorting
+cells <- read_csv(here("all_cells.csv")) %>%
+  separate_wider_delim(cols = cell_id, delim = ".", too_few = "align_start", names_sep = "_", cols_remove = FALSE) %>%
+  mutate(POL = case_when(cell_id_4 %in% c("aff", "neg") ~ cell_id_4,
+                         cell_id_5 %in% c("aff", "neg") ~ cell_id_5,
+                         cell_id_6 %in% c("aff", "neg") ~ cell_id_6,
+                         cell_id_7 %in% c("aff", "neg") ~ cell_id_7,
+                         TRUE ~ NA_character_)) %>%
+  mutate(TA = case_when(cell_id_3 %in% c("fut", "nfut") ~ cell_id_3,
+                        cell_id_4 %in% c("fut", "nfut") ~ cell_id_4,
+                        cell_id_5 %in% c("fut", "nfut") ~ cell_id_5,
+                        cell_id_6 %in% c("fut", "nfut") ~ cell_id_6,
+                        TRUE ~ NA_character_)) %>%
+  mutate(A_Number = case_when(cell_id_2 %in% c("sg", "du", "pl") ~ cell_id_2,
+                        TRUE ~ NA_character_)) %>%
+  mutate(A_Clusivity = case_when(cell_id_3 %in% c("incl", "excl") ~ cell_id_3,
+                        TRUE ~ NA_character_)) %>%
+  mutate(O_Person = case_when(cell_id_2 %in% c(1, 2, 3) ~ cell_id_2,
+                              cell_id_3 %in% c(1, 2, 3) ~ cell_id_3,
+                              cell_id_4 %in% c(1, 2, 3) ~ cell_id_4,
+                        TRUE ~ NA_character_)) %>%
+  mutate(O_Number = case_when(cell_id_4 %in% c("sg", "du", "pl") ~ cell_id_4,
+                              cell_id_5 %in% c("sg", "du", "pl") ~ cell_id_5,
+                        TRUE ~ NA_character_)) %>%
+  mutate(O_Clusivity = case_when(cell_id_5 %in% c("incl", "excl") ~ cell_id_5,
+                        TRUE ~ NA_character_)) %>%
+  select(cell_id = cell_id_cell_id, POS, TA, POL, A_Person = cell_id_1, starts_with("A_"), starts_with("O_"), Label = label)
+glimpse(cells)
 
-# read in forms and morphemes, merge each with scenarios
-forms_scen <- read_csv(here("PARALEX/ranglong/ranglong_forms.csv")) %>%
-  left_join(., scenarios, by = c("cell"="Scenario_ID"))
+# write out for future use
+# write_csv(cells, file = here("scripts/scenarios.csv"))
+```
 
-morphs_scen <- read_csv(here("PARALEX/ranglong/ranglong_morphemes.csv")) %>%
-  separate_longer_delim(in_scenarios, delim = ";") %>%
+```{r}
+# read in forms and morphemes, merge each with cells
+forms_scen <- read_csv(paste0("https://raw.githubusercontent.com/isw-unibe-ch/PMST-", str_to_title(lang_o), "/main/pmst-", lang_o, "_forms.csv")) %>%
+  left_join(cells, by = c("cell"="cell_id"))
+
+# merge with cells, add columns with person/number scenarios for plotting
+morphs_scen <- read_csv(paste0("https://raw.githubusercontent.com/isw-unibe-ch/PMST-", str_to_title(lang_o), "/main/pmst-", lang_o, "_morphs.csv")) %>%
+  separate_longer_delim(in_cells, delim = ";") %>%
   separate_longer_delim(in_forms, delim = ";") %>%
   distinct() %>%
   mutate(across(starts_with("in_"), ~str_squish(.x))) %>%
-  left_join(., scenarios, by = c("in_scenarios"="Scenario_ID")) %>%
-  mutate(across(c(A_Number, O_Number), ~factor(.x, levels = c("SG", "DU", "PL"))),
-         position = factor(position, levels = c("pre", "post", "free")),
-         Scen_Person_Number = factor(Scen_Person_Number, levels = scenario_levels)) %>%
+  left_join(., cells, by = c("in_cells"="cell_id")) %>%
+  unite("scenario_person", c(A_Person, O_Person), sep = ">", remove = FALSE, na.rm = TRUE) %>%
+  unite("scenario_number", c(A_Number, O_Number), sep = ">", remove = FALSE, na.rm = TRUE) %>%
+  mutate(across(c(A_Number, O_Number), ~factor(.x, levels = c("sg", "du", "pl"))),
+         position = factor(position, levels = c("pre", "post", "free"))) %>%
   droplevels() %>% 
   distinct() %>%
-  arrange(morpheme, position, Scen_Person_Number)
+  arrange(morph, position)
 glimpse(morphs_scen)
+```
+
+Define custom color palettes based on the locuszoom palette from ggsci.
+
+```{r}
+#| include: false
+# five colors, orange and blue
+lz_five <- c(
+  "#1F77B4",  # Dark Blue
+  "#A6C8E0",  # Light Blue
+  "#FF7F0E",  # Dark Orange
+  "#FFBB78",  # Light Orange
+  "#2CA02C"   # Green
+)
+
+# ten colors
+lz_ten <- c(
+  "#FF6F6F",  # Light Pink
+  "#D62728",  # Medium Red
+  "#A50034",  # Dark Red
+  "#FFD700",  # Light Yellow/Gold
+  "#FFB84D",  # Medium Orange
+  "#E67E22",  # Dark Orange
+  "#17BECF",  # Dark Teal
+  "#66C2C6",  # Medium Teal
+  "#008C8C",  # Dark Cyan
+  "#005B5B"   # Deep Teal
+)
+
+# twelve colors, greens and purples plus blues for dual
+lz_twelve <- c(
+  "#2B7A4D",  # Dark Green
+  "#5EBB8D",  # Medium Green
+  "#A8D5BA",  # Light Green
+  "#5E2B91",  # Dark Purple
+  "#A77BCA",  # Medium Purple
+  "#D6C3E0",  # Light Purple
+  "#2E3A54",  # Darker Shade 1
+  "#374B6D",  # Darker Shade 2
+  "#485479",  # Base Color
+  "#5B6A8A",  # Lighter Shade 1
+  "#788BBE",  # Lighter Shade 2
+  "#A4B8D1"   # Lighter Shade 3
+)
+```
+
+Distribution across tense-aspect-polarity.
+
+```{r}
+# by tense/aspect and polarity vs. pronouns
+morphs_count_tap <- morphs_scen %>%
+  distinct(position, in_cells, .keep_all = TRUE) %>% 
+  count(morph, position, TA, POL,.drop = FALSE) %>%
+  filter(n!=0) %>%
+  mutate(TA= if_else(is.na(TA), "pron", TA)) %>%
+  unite("TAP", TA:POL, sep = ".", na.rm = TRUE) %>%
+  mutate(TAP = str_to_upper(TAP),
+         TAP = factor(TAP, levels = c("NFUT.AFF", "NFUT.NEG", "FUT.AFF", "FUT.NEG", "PRON"))) %>%
+  mutate(position = factor(position, levels = c("pre", "post", "free"))) %>%
+  arrange(position, morph) %>%
+  mutate(morph = as_factor(morph))
+
+# plot
+distribution_tap <- ggplot(morphs_count_tap, aes(x = morph, y = n)) +
+  geom_histogram_pattern(aes(pattern = position, fill = TAP, pattern_fill = TAP), 
+                 stat = "identity", position = "fill",
+                 pattern_color = "grey40", color = "grey20") +
+  scale_pattern_manual(values = c("stripe", "circle", "none"), guide = "none") +
+  scale_pattern_fill_manual(values = lz_five, guide = "none") +
+  scale_fill_manual(values = lz_five, name = "Tense/Aspect-Polarity", guide = "legend") +
+  guides(fill = guide_legend(override.aes = list(pattern = "none"), nrow = 1, order = 1)) +
+  theme_bw() +
+  theme(legend.position = "top",
+        axis.title = element_blank(),
+        axis.text.x = element_text(angle = 90),
+        text = element_text(family = "Helvetica"))
+distribution_tap
+```
+
+Distribution across person scenarios.
+
+```{r}
+# by person scenario
+morphs_count_p <- morphs_scen %>%
+  distinct(position, in_cells, .keep_all = TRUE) %>%
+  count(morph, position, scenario_person,.drop = FALSE) %>%
+  filter(n!=0) %>%
+  arrange(position, morph) %>%
+  mutate(morph = as_factor(morph))
+
+# plot with extended color schema
+distribution_person <- ggplot(morphs_count_p, aes(x = morph, y = n)) +
+  geom_histogram_pattern(aes(pattern = position, fill = scenario_person, pattern_fill = scenario_person),
+    stat = "identity", position = "fill",
+    pattern_color = "grey40", color = "grey20") +
+  scale_pattern_fill_manual(values = lz_ten, guide = "none") +
+  scale_pattern_manual(values = c("stripe", "circle", "none"), guide = "none") +
+  scale_fill_manual(values = lz_ten, name = "Person", guide = "legend") +
+  guides(fill = guide_legend(override.aes = list(pattern = "none"), nrow = 1, order = 1)) +
+  theme_bw() +
+  theme(legend.position = "top",
+        axis.title = element_blank(),
+        axis.text.x = element_text(angle = 90),
+        text = element_text(family = "Helvetica"))
+distribution_person
+```
+
+
+Distribution across number configurations.
+
+```{r}
+# by number scenario
+morphs_count_n <- morphs_scen %>%
+  distinct(position, in_cells, .keep_all = TRUE) %>%
+  mutate(scenario_number = str_to_upper(scenario_number), 
+         scenario_number = factor(scenario_number, 
+                                  levels = c("SG", "SG>SG", "SG>PL", "PL", "PL>SG", "PL>PL", "DU", "DU>DU", "DU>SG", "DU>PL", "SG>DU", "PL>DU"))) %>%
+  droplevels() %>%
+  count(morph, position, scenario_number,.drop = FALSE) %>%
+  filter(n!=0) %>% 
+  arrange(position, morph) %>%
+  mutate(morph = as_factor(morph))
+
+# plot
+distribution_number <- ggplot(morphs_count_n, aes(x = morph, y = n)) +
+  geom_histogram_pattern(aes(pattern = position, fill = scenario_number, pattern_fill = scenario_number),
+    stat = "identity", position = "fill",
+    pattern_color = "grey40", color = "grey20") +
+  scale_pattern_fill_manual(values = lz_twelve, guide = "none") +
+  scale_fill_manual(values = lz_twelve, name = "Number") +
+  scale_pattern_manual(values = c("stripe", "circle", "none"), guide = "none") +
+  guides(fill = guide_legend(override.aes = list(pattern = "none"), nrow = 1, order = 1)) +
+  theme_bw() +
+  theme(legend.position = "top",
+        axis.title = element_blank(),
+        axis.text.x = element_text(angle = 90),
+        text = element_text(family = "Helvetica"))
+distribution_number
+```
+
+Combine the plots and export.
+
+```{r}
+# combine plots into one
+distribution_combined <- ggarrange(distribution_tap, 
+                                   distribution_person, 
+                                   distribution_number,
+                                   ncol = 1
+                                   )
+#distribution_combined
+
+# save combined plot to docs folder
+ggsave(here("plots/distribution_plot.png"), 
+       distribution_combined,
+       height = 25, width = 25, units = "cm", dpi = 600)
+```
+
+
+# Use case: Comparing the length of forms across languages
+
+We compare the length of forms across person scenarios in transitive affirmative forms.
+
+```{r}
+# read in the combined file, merge with cells, subset for transitive affirmative
+# read all columns as characters to avoid parsing issues
+all_forms <- read_csv(here("all_forms.csv"), col_types = cols(.default = col_character())) %>%
+  left_join(., cells, by = c("cell" = "cell_id"))
+
+# subset
+trans_aff <- all_forms %>%
+  filter(POL=="aff", !is.na(O_Person))
+```
+
+Before plotting, we recode the INCL as a person form, and add an additional variable summarizing scenarios in that way. We also add a variable that classifies scenarios into local, direct, inverse, and non-local for coloring.
+Then we count the number of phonemes per form, omitting tone (because it is not marked for all languages that have tone).
+
+```{r}
+trans_aff_scen <- trans_aff %>%
+  mutate(phon_form_nt = str_squish(str_remove_all(phon_form, " ⁵| ¹| ¹⁵| ⁵¹"))) %>%
+  mutate(phon_count = str_count(phon_form_nt, "\\s")) %>%
+  mutate(A_Comb = case_when(A_Clusivity=="incl" ~ "INCL", 
+                            .default = A_Person),
+         O_Comb = case_when(O_Clusivity=="incl" ~ "INCL", 
+                            .default = O_Person)) %>%
+  unite("scenario_combined", A_Comb:O_Comb, sep = ">", na.rm = TRUE) %>%
+  mutate(scenario_combined = factor(scenario_combined, levels = c("1>2", "2>1", "3>1", "3>2", "1>3", "2>3", "3>3", "INCL>3", "3>INCL"))) %>%
+  mutate(scenario_color = as.factor(case_match(scenario_combined,
+                                 "1>2" ~ "local",
+                                 "2>1" ~ "local",
+                                 "3>1" ~ "inverse",
+                                 "3>2" ~ "inverse",
+                                 "1>3" ~ "direct",
+                                 "2>3" ~ "direct",
+                                 "3>3" ~ "non-local",
+                                 "INCL>3" ~ "direct",
+                                 "3>INCL" ~ "inverse"))) %>%
+  mutate(language_id = factor(str_to_title(language_id), levels = c("Ranglong", "Chiru", "Analnaga", "Monsang", "Lamkang", "Hmar", "Pangkhua", "Hyow")))
+glimpse(trans_aff_scen)
+```
+
+
+```{r}
+# split the dataframe per language for better plotting
+trans_aff_split <- group_split(trans_aff_scen, language_id) %>%
+  setNames(levels(trans_aff_scen$language_id))
+
+plots_trans_aff <- lapply(names(trans_aff_split), function(i) {
+  ggplot(trans_aff_split[[i]], aes(x = scenario_combined, y = phon_count, fill = scenario_color)) +
+    geom_violin() +
+    scale_fill_bmj(name = "Type of Scenario") +
+    stat_summary(fun.data=mean_sdl, geom="pointrange", color = "grey20", size = 0.3, show.legend = FALSE) +
+    scale_y_continuous(breaks = seq(0, max(trans_aff_split[[i]]$phon_count), 1)) +
+    labs(title = paste(i, "- TR.AFF"), y = "Length in phonemes", x = "Scenario") +
+    theme_bw() +
+    theme(axis.text.x = element_text(angle = 90),
+          strip.text.x = element_text(size = 12),
+          axis.title.x = element_blank())
+})
+plots_trans_aff
+
+plots_trans_aff_grid <- ggarrange(plotlist = plots_trans_aff, 
+                                       ncol = 4, nrow = 2, align = "hv",
+                                       common.legend = TRUE, legend = "top")
+plots_trans_aff_grid
+
+# write out to file
+ggsave(here("plots/length_scenario_tr_aff.png"), plots_trans_aff_grid, height = 25, width = 45, units = "cm", dpi = 600)
+```
+
+We make the plot again, but only with default forms for comparison.
+
+```{r}
+# subset for only default forms
+trans_aff_def <- trans_aff_scen %>%
+  filter(paradigm_tag=="default")
+
+# split the dataframe per language for better plotting
+trans_aff_def_split <- group_split(trans_aff_def, language_id) %>%
+  setNames(levels(trans_aff_def$language_id))
+
+plots_trans_aff_def <- lapply(names(trans_aff_def_split), function(i) {
+  ggplot(trans_aff_def_split[[i]], aes(x = scenario_combined, y = phon_count, fill = scenario_color)) +
+    geom_violin() +
+    scale_fill_bmj(name = "Type of Scenario") +
+    stat_summary(fun.data=mean_sdl, geom="pointrange", color = "grey20", size = 0.3, show.legend = FALSE) +
+    scale_y_continuous(breaks = seq(0, max(trans_aff_def_split[[i]]$phon_count), 1)) +
+    labs(title = paste(i, "- TR.AFF"), y = "Length in phonemes", x = "Scenario") +
+    theme_bw() +
+    theme(axis.text.x = element_text(angle = 90),
+          strip.text.x = element_text(size = 12),
+          axis.title.x = element_blank())
+})
+plots_trans_aff_def
+
+plots_trans_aff_def_grid <- ggarrange(plotlist = plots_trans_aff_def, 
+                                       ncol = 4, nrow = 2, align = "hv",
+                                       common.legend = TRUE, legend = "top")
+plots_trans_aff_def_grid
+
+# write out to file
+ggsave(here("plots/length_scenario_tr_aff_def.png"), plots_trans_aff_def_grid, height = 25, width = 45, units = "cm", dpi = 600)
 ```
 
 
