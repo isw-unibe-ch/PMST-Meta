@@ -105,7 +105,6 @@ We create a plot showing a summary of the distribution of each morph in the data
 lang_t <- ("ranglong")
 # language name as object
 lang_o <- noquote(lang_t)
-
 ```
 
 ```{r}
@@ -148,10 +147,10 @@ forms_scen <- read_csv(paste0("https://raw.githubusercontent.com/isw-unibe-ch/PM
   left_join(cells, by = c("cell"="cell_id"))
 
 # merge with cells, add columns with person/number scenarios for plotting
-morphs_scen <- read_csv(paste0("https://raw.githubusercontent.com/isw-unibe-ch/PMST-", str_to_title(lang_o), "/main/pmst-", lang_o, "_morphs.csv")) %>%
+morphs_scen <- read_csv(paste0("https://raw.githubusercontent.com/isw-unibe-ch/PMST-", str_to_title(lang_o), "/main/pmst-", lang_o, "_morphs.csv")) %>%  
   separate_longer_delim(in_cells, delim = ";") %>%
-  separate_longer_delim(in_forms, delim = ";") %>%
-  distinct() %>%
+  separate_longer_delim(in_forms, delim = ";") %>% 
+  distinct() %>% 
   mutate(across(starts_with("in_"), ~str_squish(.x))) %>%
   left_join(., cells, by = c("in_cells"="cell_id")) %>%
   unite("scenario_person", c(A_Person, O_Person), sep = ">", remove = FALSE, na.rm = TRUE) %>%
@@ -213,7 +212,7 @@ Distribution across tense-aspect-polarity.
 ```{r}
 # by tense/aspect and polarity vs. pronouns
 morphs_count_tap <- morphs_scen %>%
-  distinct(position, in_cells, .keep_all = TRUE) %>% 
+  distinct(morph, position, in_cells, .keep_all = TRUE) %>% 
   count(morph, position, TA, POL,.drop = FALSE) %>%
   filter(n!=0) %>%
   mutate(TA= if_else(is.na(TA), "pron", TA)) %>%
@@ -246,7 +245,7 @@ Distribution across person scenarios.
 ```{r}
 # by person scenario
 morphs_count_p <- morphs_scen %>%
-  distinct(position, in_cells, .keep_all = TRUE) %>%
+  distinct(morph, position, in_cells, .keep_all = TRUE) %>%
   count(morph, position, scenario_person,.drop = FALSE) %>%
   filter(n!=0) %>%
   arrange(position, morph) %>%
@@ -275,7 +274,7 @@ Distribution across number configurations.
 ```{r}
 # by number scenario
 morphs_count_n <- morphs_scen %>%
-  distinct(position, in_cells, .keep_all = TRUE) %>%
+  distinct(morph, position, in_cells, .keep_all = TRUE) %>%
   mutate(scenario_number = str_to_upper(scenario_number), 
          scenario_number = factor(scenario_number, 
                                   levels = c("SG", "SG>SG", "SG>PL", "PL", "PL>SG", "PL>PL", "DU", "DU>DU", "DU>SG", "DU>PL", "SG>DU", "PL>DU"))) %>%
